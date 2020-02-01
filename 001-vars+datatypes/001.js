@@ -15,4 +15,4 @@ let resultString= `Макс ціна: ${Math.max(car,plain,bike)}
 Cумма до оплати з випадковою знижкою : ${(plainSum-((plainSum/100)*randomDiscount)).toFixed(2)}
 Упущена вигода : ${((plainSum/2)-(plainSum/100)*randomDiscount).toFixed(2)}
 `;
-console.log(resultString);
+document.write(resultString);
