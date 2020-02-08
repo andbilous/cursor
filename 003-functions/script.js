@@ -33,10 +33,10 @@ const isPalindrome = (word) => {
  return word.includes(word.split('').reverse().join(''))
 }
 
-document.writeln(getMaxDigit(123567));
-document.writeln(getNumberPower(5,2));
-document.writeln(makeFirstLetterTitle('hello'));
-document.writeln(getRandomNumber(1,10));
-document.writeln(removeLettersFromSentence('hello gaga aaasswaa','a'));
-document.writeln(isPalindrome('madam'));
-document.writeln(isPalindrome('mader'));
+console.log(getMaxDigit(123567));
+console.log(getNumberPower(5,2));
+console.log(makeFirstLetterTitle('hello'));
+console.log(getRandomNumber(1,10));
+console.log(removeLettersFromSentence('hello gaga aaasswaa','a'));
+console.log(isPalindrome('madam'));
+console.log(isPalindrome('mader'));
