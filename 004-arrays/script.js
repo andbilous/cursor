@@ -37,8 +37,8 @@ let pairsWithSubjects = addSubjectToStudentsPair(pairs);
 
 
 const setMarksToPairs = () => {
-   return pairsWithSubjects.map((pair,index)=> {
-      pair.push(marks[index]);
+   return pairsWithSubjects.map((pair)=> {
+      pair.push(marks[Math.floor(Math.random() * 5) + 1]);
       return pair;
     });
 };
