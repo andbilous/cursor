@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HW#9</title>
+  <style>
+    #container {
+        width: 250px;
+        height: 50px;
+        display: grid;
+        border: 1px solid black;
+        grid-template-columns: auto auto auto auto auto auto;
+    }
+    #container div {
+        border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="A">A</div>
+    <div id="S">S</div>
+    <div id="D">D</div>
+    <div id="F">F</div>
+    <div id="G">G</div>
+    <div id="H">H</div>
+  </div>
+  <audio id="A-sound">
+    <source src="./audio/Ambient-synth-loop-120-bpm.wav" type="audio/wav">
+  </audio>
+  <audio id="S-sound">
+    <source src="./audio/Bossa-nova-drum-beat-loop-80-bpm.wav" type="audio/wav">
+  </audio>
+  <audio id="D-sound">
+    <source src="./audio/Drum-fill.wav" type="audio/wav">
+  </audio>
+  <audio id="F-sound">
+    <source src="./audio/Telephone-ring-ringtone.mp3" type="audio/wav">
+  </audio>
+  <audio id="G-sound">
+    <source src="./audio/Collect-item-sound-effect.mp3" type="audio/wav">
+  </audio>
+  <audio id="H-sound">
+    <source src="./audio/Bossa-nova-drum-beat-loop-80-bpm.wav" type="audio/wav">
+  </audio>
+<script src="./script.js"></script>
+</body>
+</html>
