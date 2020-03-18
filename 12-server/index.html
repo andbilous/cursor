@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HW#9</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <style>
+  </style>
+  <style>
+    #container{
+      margin-left: 30%;
+    }
+    img{
+      width: 5%;
+      height: 5%;
+    }
+    input {
+  width: 60px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+    button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+ol {list-style: none}
+li::before {content: "•"; color: red;
+  display: inline-block; width: 1em;
+  margin-left: -1em}
+  </style>
+</head>
+<body>
+  <div id="container">
+    <input id='filmNumber'/>
+    <button id='getData'>Get Info</button>
+    <h1>Chars List</h1>
+    <ol id="chars-list"></ol>
+    <h1>Planet List</h1>
+    <ol id="planet-list"></ol>
+    <button id='next-planet'>Next</button>
+
+  </div>
+<script src="./script.js"></script>
+</body>
+</html>
