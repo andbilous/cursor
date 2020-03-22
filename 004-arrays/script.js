@@ -2,7 +2,7 @@ const students = ["Саша", "Игорь", "Лена", "Ира", "Алексе�
 const themes = ["Дифференциальные уравнения", "Теория автоматов", "Алгоритмы и структуры данных"];
 const marks = [4, 5, 5, 3, 4, 5];
 
-const splitIntoPairs = (students) => {
+export const splitIntoPairs = (students) => {
   let res = [];
   res.push([students[0],students[2]]);
   res.push([students[1],students[3]]);

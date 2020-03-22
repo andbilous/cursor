@@ -1,4 +1,4 @@
-function getDate() {
+export function getDate() {
   return new Promise(resolve => {
     setTimeout(function(){
       resolve(String.fromCharCode(Date.now().toString()));

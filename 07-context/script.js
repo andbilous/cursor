@@ -15,7 +15,7 @@ function getTotalTaxes () {
   return this.tax * this.middleSalary * this.vacancies;
 }
 
-function getMySalary (){
+export function getMySalary (){
   setTimeout(setInterval(()=>{
     this.salary = Math.floor(Math.random() * (2000 - 1500) + 1500)
     this.taxes= this.tax * this.salary

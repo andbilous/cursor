@@ -70,7 +70,7 @@ const getBestStudent = (students) => {
 };
 
 
-const calculateWordLetters = (word) => {
+export const calculateWordLetters = (word) => {
   let result={};
     let wordInArray = word.split('');
     wordInArray.forEach(letter=>{

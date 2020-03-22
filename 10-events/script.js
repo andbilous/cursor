@@ -7,7 +7,7 @@ container.addEventListener('click',(e)=>{
 document.addEventListener('keydown',e=>{
   makeSound(e.key.toUpperCase())
 })
-const makeSound = (id) =>{
+export const makeSound = (id) =>{
   document.getElementById(`${id}-sound`).play();
   setTimeout(()=>{
     document.getElementById(`${id}-sound`).pause();

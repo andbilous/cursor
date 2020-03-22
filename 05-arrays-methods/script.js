@@ -6,7 +6,7 @@ const getRandomArray = (length,min,max) => {
     return res;
 };
 
-const getAverage = (...numbers) => {
+export const getAverage = (...numbers) => {
 return  numbers.reduce((accumulator, currentValue)=> {
    if (Number.isInteger(currentValue)){
     return accumulator + currentValue;

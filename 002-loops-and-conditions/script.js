@@ -1,4 +1,5 @@
-let m  = NaN;
+export const f1 =()=>{}
+let  m  = NaN;
 while (isNaN(m)) {
   m = parseInt(prompt("Enter M", ''));
 }
@@ -23,3 +24,5 @@ for(let i=m; i<=n; i++){
   sum+=i;
 }
 document.write('Sum :: ',sum);
+
+

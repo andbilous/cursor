@@ -50,7 +50,7 @@ const fetchPic = (name) =>{
 }
 
 
-const fetchPlanets =(url)=>{
+export const fetchPlanets =(url)=>{
   planetList.innerHTML='';
   return fetch(url)
   .then(response => response.json())

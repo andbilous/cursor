@@ -1,4 +1,4 @@
-class Student {
+ class Student {
   constructor (university,course,fullname) {
       this.university=university;
       this.course=course;
@@ -6,7 +6,9 @@ class Student {
       this.marks = [5,5,5,5,5];
       this.disabled = false;
   }
-  getInfo = () =>`Студент ${this.course}-го курса ${this.university}, ${this.fullname}`;
+  getInfo(){
+    return `Студент ${this.course}-го курса ${this.university}, ${this.fullname}`
+  };
 
 
 
@@ -40,7 +42,7 @@ class Student {
   }
 }
 
-const student = new Student('Univer','2','Andrew Kiev');
+export const student = new Student('Univer','2','Andrew Kiev');
 console.log(student.getInfo());
 student.dismiss();
 console.log(student.studentsMarks)

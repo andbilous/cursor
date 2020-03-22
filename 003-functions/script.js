@@ -1,4 +1,4 @@
-const getMaxDigit = (number) => {   // Макс число
+export const getMaxDigit = (number) => {   // Макс число
   const sortedArray = Array.from(String(number), Number).sort();
   return sortedArray[sortedArray.length-1];
 };

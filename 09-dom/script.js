@@ -3,7 +3,7 @@ const generateRandom = () =>{
   return Math.random() * (255 - 1) + 1;
 }
 
-const generateBlocks=() =>{
+export const generateBlocks=() =>{
   for(let i=0;i<25;i++){
     let square = document.createElement("div");
     square.style.width='50px';

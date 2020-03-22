@@ -4,7 +4,7 @@ let plain = 90.2345;
 let randomDiscount = Math.floor(Math.random() * 20) + 1;
 let plainSum = plain+car+bike;
 
-let resultString= `Макс ціна: ${Math.max(car,plain,bike)}
+export let resultString= `Макс ціна: ${Math.max(car,plain,bike)}
 Мін ціна: ${Math.min(car,plain,bike)} 
 Сума : ${plainSum}
 Сума округлена : ${Math.floor(plain)+Math.floor(car)+Math.floor(bike)}
