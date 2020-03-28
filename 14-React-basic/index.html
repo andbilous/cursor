@@ -1,0 +1,99 @@
+<div id="root"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+<script type="text/babel">
+
+const ANAKIN_IMAGE = "https://upload.wikimedia.org/wikipedia/en/thumb/7/74/Anakin-Jedi.jpg/220px-Anakin-Jedi.jpg";
+
+const RAY_IMAGE = "https://specials-images.forbesimg.com/imageserve/5e63b3c8e1e617000759130e/960x0.jpg?fit=scale";
+
+
+class App extends React.Component {
+    render() {
+        return (
+          <Post author={{
+            name: "Anakin skywalker",
+            photo: ANAKIN_IMAGE,
+            nickname: "@dart_vader"
+         }}
+         content="WTF? Who is Ray? Why she is Skywalker? Luke...?"
+         image={RAY_IMAGE}
+         date={"26 февр."}
+/>
+        );
+    }
+}
+
+const Post = (props) => {
+  return <div style={styles.container}>
+    <section style={styles.header}>
+      <img style={styles.logo} src={props.author.photo}/>
+      <div style={styles.userContent}>
+        <div style={styles.title}>
+          <span style={styles.name}>{props.author.name}</span>
+          <span>{props.author.nickname}</span>
+          <i className="fa fa-check"></i>
+        <span>{props.date}</span>
+          </div>
+        <p style={styles.content}>{props.content}</p>
+        <img src={props.image} style={styles.image}/>
+        </div>
+    </section>
+    </div>
+}
+
+const styles = {
+  container:{
+    borderRadius: '10%',
+    backgroundColor:'grey',
+    paddingTop:'10px',
+    paddingLeft:'10px',
+    width: '450px',
+    height: '70vh',
+    position:'absolute',
+    top: '5%',
+    left: '40%',
+    display:'flex',
+    flexDirection: 'column'
+  },
+  title:{
+    width: '300px',
+    display:'flex',
+    justifyContent:'space-between'
+  },
+  userContent:{
+    marginLeft: '10px',
+    display:'flex',
+    flexDirection: 'column'
+  },
+  logo:{
+    width:'70px',
+    height: '70px',
+    borderRadius: '50%'
+  },
+  image:{
+    width:'90%',
+    height: '200px',
+    borderRadius: '10%',
+    marginTop:'10px'
+  },
+  header:{
+      display: 'flex'
+  },
+  name:{
+    color:'white'
+  },
+  content: {
+    color: 'white'
+  }
+}
+
+
+
+ReactDOM.render(
+    <App />,
+    document.getElementById('root')
+);
+</script>
