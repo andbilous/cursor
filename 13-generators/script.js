@@ -8,7 +8,7 @@ console.log(idGenerator.next().value)
 console.log(idGenerator.next().value)
 console.log(idGenerator.next().value)
 
-export function* newFontGenerator(i) {
+ function* newFontGenerator(i) {
   while (true) {
     let currentValue = yield i;
     if (currentValue === "up") {
