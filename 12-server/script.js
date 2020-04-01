@@ -49,8 +49,7 @@ const fetchPic = (name) =>{
   })
 }
 
-
-export const fetchPlanets =(url)=>{
+ const fetchPlanets =(url)=>{
   planetList.innerHTML='';
   return fetch(url)
   .then(response => response.json())
